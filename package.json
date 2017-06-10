@@ -1,7 +1,7 @@
 {
   "private": "true",
   "scripts": {
-    "start": "watchify -v -t vueify -e src/main.js -o out/app.js"
+    "start": "watchify -vd -t vueify -e src/main.js -o out/app.js"
   },
   "dependencies": {
     "browserify": "^14.4.0",
