@@ -1,8 +1,14 @@
 {
   "private": "true",
   "scripts": {
-    "start": "echo Hello world!"
+    "start": "watchify -v -t vueify -e src/main.js -o out/app.js"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "vue": "^2.3.4",
+    "vueify": "^9.4.1"
+  },
+  "devDependencies": {
+    "watchify": "^3.9.0"
+  }
 }
