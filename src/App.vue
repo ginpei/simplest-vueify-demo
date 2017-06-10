@@ -1,18 +1,24 @@
-<style>
-h1 {
-	color: red;
+<style scoped>
+.titleArea {
+	text-align: center;
 }
 </style>
 
 <template>
-	<h1>{{message}}</h1>
+	<title-area :title="title" class="titleArea"></title-area>
 </template>
 
 <script>
+const TitleArea = require('./TitleArea.vue');
+
 module.exports = {
+	components: {
+		TitleArea,
+	},
+
 	data() {
 		return {
-			message: 'Hello World!',
+			title: 'Hello World!',
 		};
 	},
 };
